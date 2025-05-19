@@ -13,7 +13,7 @@ const categories = [
   { label: "All", icon: <FaShoppingBag /> },
   { label: "Cafe", icon: <FaCoffee /> },
   { label: "Home", icon: <FaHome /> },
-  { label: "Toys", icon: <FaGift /> },
+  { label: "Toys", icon: <FaGift /> }, 
   { label: "Fresh", icon: <FaAppleAlt /> },
   { label: "Electronics", icon: <FaHeadphones /> },
   { label: "Mobiles", icon: <FaMobileAlt /> },
