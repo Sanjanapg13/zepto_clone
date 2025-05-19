@@ -15,7 +15,7 @@ const OrderSuccess = ({ user }) => {
 
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/cart/clear',
+          'http://43.204.188.173:5000/api/cart/clear',
           {},
           { headers: { Authorization: `Bearer ${token}` } }
         );
