@@ -16,7 +16,7 @@ const LoginForm = ({ setUser }) => {
         // If token exists, fetch user profile to verify
         const fetchProfile = async () => {
           try {
-            const res = await fetch('http://localhost:5000/auth/profile', {
+            const res = await fetch('http://43.204.188.173:5000/auth/profile', {
               headers: { Authorization: `Bearer ${token}` },
             });
             const data = await res.json();
@@ -54,7 +54,7 @@ const LoginForm = ({ setUser }) => {
         e.preventDefault();
 
         try {
-            const res = await fetch('http://localhost:5000/auth/login', {
+            const res = await fetch('http://43.204.188.173:5000/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password, role }),
