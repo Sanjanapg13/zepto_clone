@@ -18,7 +18,7 @@ function Profile() {
       }
 
       try {
-        const res = await fetch('http://localhost:5000/profile', {
+        const res = await fetch('http://43.204.188.173:5000/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
