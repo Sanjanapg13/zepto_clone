@@ -48,6 +48,8 @@ const Register = () => {
     if (data1?.success) {
       setRegistrationId(data1.registrationId);
       setShowOTP(true);
+      // Display OTP as an alert
+      alert(`Your OTP is: ${data1.otp}`);
     } else {
       alert(data1.message || 'Registration failed');
     }
