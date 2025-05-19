@@ -11,7 +11,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     const email = e.target.email.value;
 
-    const res = await fetch('http://localhost:5000/auth/forgot-password', {
+    const res = await fetch('http://43.204.188.173:5000/auth/forgot-password', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, role }),
